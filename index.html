@@ -61,15 +61,7 @@
   //pointer-events: none;
   //cursor: default;
 //}
-  (function ($) {
-    $( window ).load(function() {
-        $('.navbar a').unbind('click');
-        $('.navbar a').click(function () {
-            //DO SOMETHING
-            return false;
-        });
-    });
-})(jQuery);
+  
   $(".click-btn-down").click(function(){
       var link = $(".link").val();
     var fromate = $(".formte").children("option:selected").val();
