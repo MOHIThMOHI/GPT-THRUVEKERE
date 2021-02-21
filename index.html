@@ -53,6 +53,14 @@
   </div>
 </body>
 <script type="text/javascript">
+  iframe.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+    a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
   $(".click-btn-down").click(function(){
       var link = $(".link").val();
     var fromate = $(".formte").children("option:selected").val();
@@ -62,6 +70,7 @@
   function downloadVideo(link,fromate) {
       $('.download-video').html('<iframe style="width:100%;height:60px;border:0;overflow:hidden;" scrolling="no" src="https://loader.to/api/button/?url='+link+'&f='+fromate+'"></iframe>');
   }
+  
 </script>
 </html>
 
